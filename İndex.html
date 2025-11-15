@@ -1,11 +1,64 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Benim Sitem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Güzel Web Sayfam</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3a7bd5, #3a6073);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: white;
+            color: #333;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+            border-radius: 20px;
+        }
+    </style>
 </head>
-<body style="background:black; color:white; text-align:center; padding-top:50px;">
-  <h1>Hoş geldin!</h1>
-  <p>Bu benim ilk GitHub Pages sitem.</p>
+<body>
+    <header>
+        <h1>Hoş Geldin!</h1>
+        <p>Bu sayfa senin için VSCode'da hazırlanmış şık bir web sayfasıdır.</p>
+        <div class="btn" onclick="btnBasildi()">Bana Tıkla</div>
+    </header><section>
+    <h2>Hakkında</h2>
+    <p>Buraya istediğin metni, resmi veya butonları ekleyebilirsin.</p>
+</section>
+
+<script>
+    function btnBasildi() {
+        alert("Butona tıkladın!");
+    }
+</script>
+
 </body>
 </html>
